@@ -8,7 +8,7 @@ images_name = listdir(image_dir)
 # user parameters
 final_size_x = 10000
 final_size_y = 10000
-image_size = 128
+image_size = 512
 padding = 60
 
 range_x = final_size_x // (image_size + padding)
