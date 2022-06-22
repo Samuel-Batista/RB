@@ -39,3 +39,5 @@ for y in range(range_y):
 
 
 main_sheet.save(r'.\results\new.png', 'png')
+
+print('done')
