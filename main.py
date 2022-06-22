@@ -6,10 +6,10 @@ image_dir = r".\images"
 images_name = listdir(image_dir)
 
 # user parameters
-final_size_x = 4000
-final_size_y = 4000
+final_size_x = 8000
+final_size_y = 8000
 image_size = 128
-padding = 40
+padding = 60
 
 range_x = final_size_x // (image_size + padding)
 range_y = final_size_y // (image_size + padding)
@@ -31,6 +31,9 @@ for y in range(range_y):
 
         x_pos = x * (image_size + padding)
         y_pos = y * (image_size + padding)
+
+        if not y % 2 == 0:
+            x_pos -= int((image_size + padding) / 2)
 
         main_sheet.paste(image_sheet, (x_pos, y_pos), image_sheet)
 
