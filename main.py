@@ -6,8 +6,8 @@ image_dir = r".\images"
 images_name = listdir(image_dir)
 
 # user parameters
-final_size_x = 8000
-final_size_y = 8000
+final_size_x = 10000
+final_size_y = 10000
 image_size = 128
 padding = 60
 
